@@ -3,6 +3,7 @@ import Home from "./Home";
 import Album from "./Album";
 
 import { Switch, Route } from "react-router-dom";
+import NewAlbum from "./NewAlbum";
 
 const Main = () => {
   return (
@@ -10,7 +11,7 @@ const Main = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/album" component={Album} />
-        {/* <Route path="/" exact component={Home} /> */}
+        <Route path="/new" exact component={NewAlbum} />
       </Switch>
     </main>
   );
