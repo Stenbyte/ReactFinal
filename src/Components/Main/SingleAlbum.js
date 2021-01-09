@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-
+import { Container } from "react-bootstrap";
 const SingleAlbum = () => {
   const [album, setPost] = useState();
   let { id } = useParams();
@@ -21,11 +21,20 @@ const SingleAlbum = () => {
   }
   if (album) {
     albumData = (
-      <div>
-        <h1>
-          Title: {album.title} and id:{album.id}
-        </h1>
-      </div>
+      <Container
+        style={{
+          background: "lightblue",
+          width: "90rem",
+          margin: "auto",
+          textAlign: "center",
+        }}
+      >
+        <div>
+          <h1>Title:</h1>
+          <p>{album.title} and</p>
+          <p>id:{album.id}</p>
+        </div>
+      </Container>
     );
   }
 

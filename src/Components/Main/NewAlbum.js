@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
+import {
+  InputGroup,
+  Button,
+  FormControl,
+  Container,
+  Form,
+} from "react-bootstrap";
 
 const NewAlbum = () => {
   const [newAlbum, setNewAlbum] = useState({
@@ -24,34 +31,45 @@ const NewAlbum = () => {
   };
 
   return (
-    <>
-      <h1>Add new</h1>
-      <form className="newAlbum" onSubmit={addAlbumHandler}>
-        <div>
-          <label htmlFor="title">Title</label>
-          <input
-            type="text"
-            name="title"
-            id="title"
-            onChange={changeValueHandler}
-          />
-        </div>
-        <div>
-          <label htmlFor="id">Id</label>
-          <input type="text" name="id" id="id" onChange={changeValueHandler} />
-        </div>
-        <div>
-          <label htmlFor="img">Img</label>
-          <input
-            type="text"
-            name="img"
-            id="img"
-            onChange={changeValueHandler}
-          />
-        </div>
-        <button type="submit">Add new</button>
-      </form>
-    </>
+    <Container>
+      <>
+        <Form
+          onSubmit={addAlbumHandler}
+          style={{ margin: "3rem", textAlign: "center" }}
+        >
+          <h1>Add new</h1>
+          <Form.Group style={{ width: "30rem", margin: "auto" }}>
+            <Form.Label htmlFor="title">Title</Form.Label>
+            <Form.Control
+              type="text"
+              name="title"
+              id="title"
+              onChange={changeValueHandler}
+            ></Form.Control>
+
+            <Form.Label htmlFor="id">Id</Form.Label>
+            <Form.Control
+              type="text"
+              name="id"
+              id="id"
+              onChange={changeValueHandler}
+            ></Form.Control>
+
+            <Form.Label htmlFor="img">Img</Form.Label>
+            <Form.Control
+              type="text"
+              name="img"
+              id="img"
+              onChange={changeValueHandler}
+            ></Form.Control>
+
+            <Button type="submit" style={{ margin: "1rem" }}>
+              Add new
+            </Button>
+          </Form.Group>
+        </Form>
+      </>
+    </Container>
   );
 };
 
