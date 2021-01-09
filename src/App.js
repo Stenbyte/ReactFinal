@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Header from "./Components/Header/Header";
+import Nav from "./Components/Header/Nav";
 import Main from "./Components/Main/Main";
 
 import { BrowserRouter as Router } from "react-router-dom";
@@ -8,7 +8,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <Header />
+      <Nav />
       <Main />
     </Router>
   );
