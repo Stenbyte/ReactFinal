@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import {
-  InputGroup,
-  Button,
-  FormControl,
-  Container,
-  Form,
-} from "react-bootstrap";
+import { Button, Container, Form } from "react-bootstrap";
 
 const NewAlbum = () => {
   const [newAlbum, setNewAlbum] = useState({

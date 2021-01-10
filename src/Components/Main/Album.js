@@ -3,7 +3,7 @@ import axios from "axios";
 import { useRouteMatch, Route, Switch } from "react-router-dom";
 import Cardd from "./Cardd";
 import SingleAlbum from "./SingleAlbum";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 const Album = () => {
   const [albums, setAlbums] = useState([]);

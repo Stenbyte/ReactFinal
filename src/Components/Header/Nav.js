@@ -21,16 +21,21 @@ const Nav = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             ST <i class="fas fa-air-freshener" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+            <li>
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                API
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/api" className="nav-links" onClick={closeMobileMenu}>
+                APICheck link
               </Link>
             </li>
             <li>
@@ -54,7 +59,7 @@ const Nav = () => {
             </li>
             <li>
               <Link
-                to="/Products"
+                to="/products"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
