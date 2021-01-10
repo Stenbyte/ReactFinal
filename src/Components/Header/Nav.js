@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 import { Button } from "../Button/Button";
@@ -16,13 +16,16 @@ const Nav = () => {
       setButton(true);
     }
   };
+  useEffect(() => {
+    showButton();
+  }, []);
   window.addEventListener("resize", showButton);
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            ST <i class="fas fa-air-freshener" />
+            ST <i className="fas fa-air-freshener" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
