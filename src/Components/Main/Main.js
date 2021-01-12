@@ -7,6 +7,7 @@ import Home from "../Home/Home";
 import Services from "../SP/Services";
 import Products from "../SP/Products";
 import SignUp from "../SP/SignUp";
+import Footer from "../Footer/Footer";
 
 const Main = () => {
   return (

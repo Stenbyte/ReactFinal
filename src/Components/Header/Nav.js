@@ -38,7 +38,7 @@ const Nav = () => {
             </li>
             <li className="nav-item">
               <Link to="/api" className="nav-links" onClick={closeMobileMenu}>
-                APICheck link
+                API
               </Link>
             </li>
             <li>

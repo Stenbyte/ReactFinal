@@ -11,12 +11,9 @@ const Cardd = ({ id, title, img, link }) => {
         <Card style={{ width: "18rem", padding: "0.2rem", margin: "0.3rem" }}>
           <Card.Img variant="top" src={img} alt={title} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Card Title#</Card.Title>
             <Card.Text style={{ height: "13rem" }}>
-              {title}
-              {id}
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Title: {title}. ID: {id}. Created with Bootstrap
             </Card.Text>
             <Button variant="dark">
               <Link to={link}>Read more</Link>

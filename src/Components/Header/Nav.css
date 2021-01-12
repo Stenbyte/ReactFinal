@@ -27,6 +27,11 @@
   display: flex;
   align-items: center;
 }
+.navbar-logo:hover {
+  text-decoration: none;
+  color: rgb(251, 255, 0);
+  transition: all 0.3s ease-in-out;
+}
 .fa-air-freshener {
   margin-left: 0.5rem;
   font-size: 1.8rem;
@@ -55,6 +60,8 @@
 .nav-links:hover {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: crimson;
 }
 .fa-bars {
   color: #fff;

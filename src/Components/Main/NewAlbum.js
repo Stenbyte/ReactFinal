@@ -31,7 +31,8 @@ const NewAlbum = () => {
           onSubmit={addAlbumHandler}
           style={{ margin: "3rem", textAlign: "center" }}
         >
-          <h1>Add new</h1>
+          <h1>Created with Bootstrap#1</h1>
+          <h2>Add new</h2>
           <Form.Group style={{ width: "30rem", margin: "auto" }}>
             <Form.Label htmlFor="title">Title</Form.Label>
             <Form.Control
